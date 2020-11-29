@@ -13,12 +13,12 @@
 <body>
     {% include "navbar.html" %}
    
-    
+
     {% block content %}
       
     {% endblock  %}
 
-    
+    {% include "footer.html" %}
 
     <script src="{% static 'js/jquery-3.4.1.slim.min.js' %}"></script>
     <script src="{% static 'js/popper.min.js' %}"></script>
@@ -29,5 +29,7 @@
         })
         $(".year").text( (new Date).getFullYear() );
     </script>
+   
+
 </body>
 </html>
