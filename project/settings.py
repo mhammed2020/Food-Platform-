@@ -80,7 +80,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
          'NAME': 'restauDB',
-        'USER': 'medo',
+        'USER': 'usr',
         'PASSWORD': 'pwd',
         'HOST'  : 'localhost'
     }
