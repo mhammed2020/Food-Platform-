@@ -2,7 +2,7 @@ from django.db import models
 from datetime import datetime
 # Create your models here.
 
-class Name(models.Model):
+class Product(models.Model):
     name = models.CharField(max_length=100, blank=True, null=True)
     description = models.TextField()
     price = models.DecimalField(max_digits=5, decimal_places=2)
