@@ -2,5 +2,7 @@ from django.shortcuts import render
 
 # Create your views here.
 
-def home2(request) :
-    pass
+def signin(request) :
+    
+
+    return render(request,'accounts/signin.html')
