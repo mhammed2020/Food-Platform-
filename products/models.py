@@ -6,7 +6,7 @@ class Product(models.Model):
     name = models.CharField(max_length=100, blank=True, null=True)
     description = models.TextField()
     price = models.DecimalField(max_digits=5, decimal_places=2)
-    is_active = models.BooleanField(default = False)
+    photo = models.ImageField(upload_to ='photo/%Y/%m/%d/')
     published_at = models.DateTimeField(default = datetime.now)
 
     def __str__(self):
