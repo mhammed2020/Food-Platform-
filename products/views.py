@@ -9,7 +9,7 @@ def product_list(request):
     return render (request,'products/product_list.html')
 
 
-def product(request,id):
+def product(request):
     
 
     return render (request,'products/product.html')
