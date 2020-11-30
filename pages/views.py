@@ -11,6 +11,6 @@ def about(request) :
     return render(request,'pages/about.html')
 
 
-def coffee(request) :
+def restaurant(request) :
     
-    return render(request,'pages/coffee.html')
+    return render(request,'pages/restaurant.html')
