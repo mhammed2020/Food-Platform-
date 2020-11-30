@@ -13,7 +13,7 @@
         <ul class="navbar-nav mr-auto">
 
           <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only"></span></a>
+              <a class="nav-link" href="{% url 'home' %}">Home <span class="sr-only"></span></a>
           </li>
          
 
@@ -22,10 +22,10 @@
             Join us
             </a>
             <div class="dropdown-menu animate slideIn" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Sign in</a>
-            <a class="dropdown-item" href="#">Sign up</a>
+            <a class="dropdown-item" href="{% url 'signin' %}">Sign in</a>
+            <a class="dropdown-item" href="{% url 'signup' %}">Sign up</a>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Profile</a>
+            <a class="dropdown-item" href="{% url 'home' %}">Profile</a>
             </div>
           </li>
 
