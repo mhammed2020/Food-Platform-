@@ -17,8 +17,8 @@ def product_list(request):
     return render (request,'products/product_list.html',context)
 
 
-def product(request,id_test):
-    product = Product.objects.get(id=id_test)
+def product(request,id):
+    product = Product.objects.get(id=id)
 
     
     context = {
@@ -27,7 +27,7 @@ def product(request,id_test):
 
 
 
-    return render (request,'products/product.html')
+    return render (request,'products/product.html',context)
 
 def search(request):
     

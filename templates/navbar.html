@@ -35,15 +35,15 @@
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Menu
             </a>
+            {% for product in products  %}
+              
             <div class="dropdown-menu animate slideIn" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="{% url 'product' %}">Pizza</a>
-            <a class="dropdown-item" href="{% url 'product' %}">Frit</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="{% url 'product' %}">Burger</a>
-            <a class="dropdown-item" href="{% url 'product' %}">Shawarma</a>
-            <a class="dropdown-item" href="{% url 'product_list' %}">All product</a>
-            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="{% url 'product'  %}">{{product.name}}</a>
+        
             </div>
+
+            {% endfor %}
+
           </li>
 
           <li class="nav-item">
