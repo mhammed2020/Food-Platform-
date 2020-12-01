@@ -29,6 +29,8 @@ def product(request,id):
 
     return render (request,'products/product.html',context)
 
+
+
 def search(request):
     
 
