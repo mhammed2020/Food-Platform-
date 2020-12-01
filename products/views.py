@@ -8,6 +8,12 @@ def product_list(request):
      
 
     products = Product.objects.all()
+    name = None
+
+    if 'product_name' in request.GET :
+        name = request.GET['product_name']
+        if name :
+            products = products.filter(name__icontains=name)
 
     context = {
         'products' : products
